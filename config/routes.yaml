@@ -1,7 +1,55 @@
 list:
-    path: /
-    controller: App\Controller\ListController::index
+  path: /
+  controller: App\Controller\ListController::index
 
 templates.photo.gallery:
-    path: /templates/photo-galery
-    controller: App\Controller\TemplatesController::photoGallery
+  path: /templates/photo-galery
+  controller: App\Controller\TemplatesController::photoGallery
+
+templates.video.gallery:
+  path: /templates/video-galery
+  controller: App\Controller\TemplatesController::videoGallery
+
+templates.mixed.gallery:
+  path: /templates/mixed-galery
+  controller: App\Controller\TemplatesController::mixedGallery
+
+templates.login:
+  path: /templates/login
+  controller: App\Controller\TemplatesController::login
+
+templates.contact:
+  path: /templates/contact
+  controller: App\Controller\TemplatesController::contact
+
+templates.footer:
+  path: /templates/footer
+  controller: App\Controller\TemplatesController::footer
+
+templates.sitemap:
+  path: /templates/sitemap
+  controller: App\Controller\TemplatesController::sitemap
+
+templates.shortcuts:
+  path: /templates/shortcuts
+  controller: App\Controller\TemplatesController::shortcuts
+
+templates.faq:
+  path: /templates/faq
+  controller: App\Controller\TemplatesController::faq
+
+templates.thanks:
+  path: /templates/thanks
+  controller: App\Controller\TemplatesController::thanks
+
+templates.employees:
+  path: /templates/employees
+  controller: App\Controller\TemplatesController::employees
+
+templates.pricing:
+  path: /templates/pricing
+  controller: App\Controller\TemplatesController::pricing
+
+templates.create.account:
+  path: /templates/create-account
+  controller: App\Controller\TemplatesController::createAccount

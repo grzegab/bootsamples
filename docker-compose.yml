@@ -11,7 +11,7 @@ services:
     image: nginx:latest
     container_name: bootsapmles_web
     labels:
-      - "traefik.frontend.rule=Host:bootsamples.traefik.localhost"
+      - "${DOCKER_HOST_FRONTEND}"
       - "traefik.docker.network=proxy"
     volumes:
       - .:/var/www/html:cached
@@ -33,5 +33,5 @@ services:
     ports:
       - "9000:9000"
     environment:
-      - PHP_XDEBUG_ENABLED=1
+      - PHP_XDEBUG_ENABLED=${PHP_XDEBUG_ENABLED}
       - APP_ENV=${APP_ENV}

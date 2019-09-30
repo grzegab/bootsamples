@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'back.html.twig' %}
+    <div class="container my-3 my-sm-5">
+        <h1 class="text-center mb-3 mb-sm-5">Pricing table</h1>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card card-outline-success text-center">
+                    <div class="card-header bg-success text-white">
+                        <h2>Personal</h2>
+                        <h4>$19.99 / year</h4>
+                    </div>
+                    <div class="card-block">
+                        <p class="card-text text-left">Perfect if you have your own personal website.</p>
+                    </div>
+                    <ul class="list-group small">
+                        <li class="list-group-item">5GB Storage</li>
+                        <li class="list-group-item">3 e-mails</li>
+                        <li class="list-group-item">1 domain</li>
+                        <li class="list-group-item">1GB bandwidth</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-success btn-lg">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card card-outline-warning text-center">
+                    <div class="card-header bg-warning text-white">
+                        <h2>Premium</h2>
+                        <h4>$49.99 / year</h4>
+                    </div>
+                    <div class="card-block">
+                        <p class="card-text text-left">Perfect if you're running several websites.</p>
+                    </div>
+                    <ul class="list-group small">
+                        <li class="list-group-item">20GB Storage</li>
+                        <li class="list-group-item">10 e-mails</li>
+                        <li class="list-group-item">10 domains</li>
+                        <li class="list-group-item">5GB bandwidth</li>
+                        <li class="list-group-item">Enhanced performance</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-warning btn-lg">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card card-outline-danger text-center">
+                    <div class="card-header bg-danger text-white">
+                        <h2>Enterprise</h2>
+                        <h4>$199.99 / year</h4>
+                    </div>
+                    <div class="card-block">
+                        <p class="card-text text-left">Perfect if you're a big company with many websites.</p>
+                    </div>
+                    <ul class="list-group small">
+                        <li class="list-group-item">100GB Storage</li>
+                        <li class="list-group-item">100 e-mails</li>
+                        <li class="list-group-item">50 domains</li>
+                        <li class="list-group-item">25GB bandwidth</li>
+                        <li class="list-group-item">Enhanced performance</li>
+                        <li class="list-group-item">24/7 online support</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-danger btn-lg">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
