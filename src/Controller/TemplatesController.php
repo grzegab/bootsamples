@@ -5,7 +5,7 @@ namespace App\Controller;
 
 
 use Faker\Generator;
-use Faker\Provider\{DateTime, en_US\Person, Image, Lorem};
+use Faker\Provider\{Address, DateTime, en_US\Person, Image, Internet, Lorem, PhoneNumber};
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
 use Twig\Error\LoaderError;
@@ -19,6 +19,10 @@ class TemplatesController
      */
     private $twig;
 
+    /**
+     * TemplatesController constructor.
+     * @param Environment $twig
+     */
     public function __construct(Environment $twig)
     {
         $this->twig = $twig;
@@ -83,46 +87,114 @@ class TemplatesController
         return new Response($this->twig->render('templates/page-login.html.twig'));
     }
 
+    /**
+     * @return Response
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
+     */
     public function contact(): Response
     {
-        return new Response($this->twig->render('templates/contact.html.twig'));
+        $faker = new Generator();
+        $faker->addProvider(new Person($faker));
+        $faker->addProvider(new Address($faker));
+        $faker->addProvider(new PhoneNumber($faker));
+        $faker->addProvider(new Internet($faker));
+        $faker->addProvider(new DateTime($faker));
+
+        return new Response($this->twig->render('templates/contact.html.twig', ['faker' => $faker]));
     }
 
+    /**
+     * @return Response
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
+     */
     public function footer(): Response
     {
         return new Response($this->twig->render('templates/footer.html.twig'));
     }
 
+    /**
+     * @return Response
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
+     */
     public function sitemap(): Response
     {
         return new Response($this->twig->render('templates/sitemap.html.twig'));
     }
 
+    /**
+     * @return Response
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
+     */
     public function shortcuts(): Response
     {
         return new Response($this->twig->render('templates/shortcuts.html.twig'));
     }
 
+    /**
+     * @return Response
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
+     */
     public function faq(): Response
     {
-        return new Response($this->twig->render('templates/faq.html.twig'));
+        $faker = new Generator();
+        $faker->addProvider(new Lorem($faker));
+
+        return new Response($this->twig->render('templates/faq.html.twig', ['faker' => $faker]));
     }
 
+    /**
+     * @return Response
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
+     */
     public function thanks(): Response
     {
         return new Response($this->twig->render('templates/thanks.html.twig'));
     }
 
+    /**
+     * @return Response
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
+     */
     public function employees(): Response
     {
-        return new Response($this->twig->render('templates/employees.html.twig'));
+        $faker = new Generator();
+        $faker->addProvider(new Person($faker));
+        $faker->addProvider(new Image($faker));
+
+        return new Response($this->twig->render('templates/employees.html.twig', ['faker' => $faker]));
     }
 
+    /**
+     * @return Response
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
+     */
     public function pricing(): Response
     {
         return new Response($this->twig->render('templates/pricing.html.twig'));
     }
 
+    /**
+     * @return Response
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
+     */
     public function createAccount(): Response
     {
         return new Response($this->twig->render('templates/create-account.html.twig'));
