@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cfb62d32-c1c1-4792-ad2e-9e4ca18137c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/templates/contact.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/templates/create-account.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/templates/employees.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/templates/faq.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/templates/footer.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/templates/mixed-gallery.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/templates/page-login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/templates/pricing.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/templates/shortcuts.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/templates/sitemap.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/templates/thanks.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/templates/video-gallery.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="cfb62d32-c1c1-4792-ad2e-9e4ca18137c7" name="Default Changelist" comment="add favicon">
+      <change afterPath="$PROJECT_DIR$/public/android-chrome-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/android-chrome-512x512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mstile-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/safari-pinned-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/site.webmanifest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/nginx.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/TemplatesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TemplatesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/back.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/templates/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/templates/footer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/templates/page-login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/templates/page-login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/templates/thanks.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/templates/thanks.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,19 +160,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/templates/survey" />
+      <recent name="$PROJECT_DIR$/templates/bussiness" />
+      <recent name="$PROJECT_DIR$/templates/resume" />
+      <recent name="$PROJECT_DIR$/templates/faq" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/assets" />
-      <recent name="$PROJECT_DIR$/templates/templates" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -204,8 +200,19 @@
       <updated>1569135934661</updated>
       <workItem from="1569135935705" duration="9250000" />
       <workItem from="1569353462661" duration="620000" />
-      <workItem from="1569739391170" duration="7885000" />
+      <workItem from="1569739391170" duration="8220000" />
+      <workItem from="1570474822329" duration="1681000" />
+      <workItem from="1570565036756" duration="924000" />
+      <workItem from="1570860106751" duration="3654000" />
     </task>
+    <task id="LOCAL-00001" summary="- add templates&#10;- updated docker config&#10;- updated nginx config&#10;- add assets">
+      <created>1569878483872</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569878483872</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,5 +230,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- add templates&#10;- updated docker config&#10;- updated nginx config&#10;- add assets" />
+    <MESSAGE value="add favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="add favicon" />
   </component>
 </project>
