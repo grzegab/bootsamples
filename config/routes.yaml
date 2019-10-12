@@ -53,3 +53,35 @@ templates.pricing:
 templates.create.account:
   path: /templates/create-account
   controller: App\Controller\TemplatesController::createAccount
+
+pages.blog.index:
+  path: /blog
+  controller: App\Controller\BlogController::index
+
+pages.business.index:
+  path: /business
+  controller: App\Controller\BusinessController::index
+
+pages.faq.index:
+  path: /faq
+  controller: App\Controller\FaqController::index
+
+pages.forum.index:
+  path: /forum
+  controller: App\Controller\ForumController::index
+
+pages.landing.index:
+  path: /landing
+  controller: App\Controller\LandingController::index
+
+pages.resume.index:
+  path: /resume
+  controller: App\Controller\ResumeController::index
+
+pages.survey.index:
+  path: /survey
+  controller: App\Controller\SurveyController::index
+
+pages.admin.index:
+  path: /admin
+  controller: App\Controller\LandingController::index
