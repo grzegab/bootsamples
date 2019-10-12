@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    {% include 'back.html.twig' %}
+    {{ parent() }}
     <a href="#" data-toggle="modal" data-target="#modal">View keyboard shortcuts</a>
     <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
