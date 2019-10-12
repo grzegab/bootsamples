@@ -1,0 +1,27 @@
+.bg {
+    /* The image used */
+    background-image: url("../img/login.jpg");
+
+
+    /* Half height */
+    height: 50%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg .container {
+    background-color: rgba(253, 253, 253, 0.5);
+}
+
+.back-button {
+    top: 15px;
+    right: 20px;
+    z-index: 9999;
+}
+
+footer {
+    background-color: antiquewhite;
+}

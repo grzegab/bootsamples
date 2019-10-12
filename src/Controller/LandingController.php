@@ -4,6 +4,14 @@
 namespace App\Controller;
 
 
+use Faker\Generator;
+use Faker\Provider\Address;
+use Faker\Provider\DateTime;
+use Faker\Provider\en_US\Person;
+use Faker\Provider\Image;
+use Faker\Provider\Internet;
+use Faker\Provider\Lorem;
+use Faker\Provider\PhoneNumber;
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
 use Twig\Error\LoaderError;
@@ -30,6 +38,16 @@ class LandingController
      */
     public function index(): Response
     {
-        return new Response($this->twig->render('landing_page/index.html.twig'));
+        // Add fake data to the page
+        $faker = new Generator();
+        $faker->addProvider(new Person($faker));
+        $faker->addProvider(new Image($faker));
+        $faker->addProvider(new Lorem($faker));
+        $faker->addProvider(new Address($faker));
+        $faker->addProvider(new PhoneNumber($faker));
+        $faker->addProvider(new Internet($faker));
+        $faker->addProvider(new DateTime($faker));
+
+        return new Response($this->twig->render('landing_page/index.html.twig', ['faker' => $faker]));
     }
 }
