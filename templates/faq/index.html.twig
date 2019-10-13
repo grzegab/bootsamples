@@ -1,13 +1,107 @@
-{% extends 'base.html.twig' %}
+{% extends 'faq/faq.html.twig' %}
 
-{% block stylesheets %}
-    {{ parent() }}
-{% endblock %}
-
-{% block body %}
-    {{ parent() }}
-{% endblock %}
-
-{% block javascripts %}
-    {{ parent() }}
+{% block content %}
+    <main>
+        <div class="container mt-3 mb-5">
+            <form class="mb-5">
+                <div class="input-group input-group-lg">
+                    <input type="search" name="search" class="form-control" id="search" placeholder="How can we help you?" aria-label="Search for...">
+                    <span class="input-group-append">
+							<button type="submit" class="btn btn-primary">Search</button>
+						</span>
+                </div>
+            </form>
+            <h2 class="text-center mb-4">Most read articles</h2>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="{{ faker.imageUrl(80, 80) }}" class="mb-3">
+                            <h3 class="card-title h5"><a href="{{ path('pages.faq.article') }}">{{ faker.sentence(3) }}</a></h3>
+                            <div class="card-text">{{ faker.realText(300) }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="{{ faker.imageUrl(80, 80) }}" class="mb-3">
+                            <h3 class="card-title h5"><a href="{{ path('pages.faq.article') }}">{{ faker.sentence(3) }}</a></h3>
+                            <div class="card-text">{{ faker.realText(300) }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="{{ faker.imageUrl(80, 80) }}" class="mb-3">
+                            <h3 class="card-title h5"><a href="{{ path('pages.faq.article') }}">{{ faker.sentence(3) }}</a></h3>
+                            <div class="card-text">{{ faker.realText(300) }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="{{ faker.imageUrl(80, 80) }}" class="mb-3">
+                            <h3 class="card-title h5"><a href="{{ path('pages.faq.article') }}">{{ faker.sentence(3) }}</a></h3>
+                            <div class="card-text">{{ faker.realText(300) }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5">
+            <h2 class="text-center mb-4">Categories</h2>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-5">
+                    <h3 class="h5"><a href="{{ path('pages.faq.category') }}">{{ faker.sentence(1) }}</a></h3>
+                    <p>{{ faker.realText(300) }}</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-5">
+                    <h3 class="h5"><a href="{{ path('pages.faq.category') }}">{{ faker.sentence(1) }}</a></h3>
+                    <p>{{ faker.realText(300) }}</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-5">
+                    <h3 class="h5"><a href="{{ path('pages.faq.category') }}">{{ faker.sentence(1) }}</a></h3>
+                    <p>{{ faker.realText(300) }}</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-5">
+                    <h3 class="h5"><a href="{{ path('pages.faq.category') }}">{{ faker.sentence(1) }}</a></h3>
+                    <p>{{ faker.realText(300) }}</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-5">
+                    <h3 class="h5"><a href="{{ path('pages.faq.category') }}">{{ faker.sentence(1) }}</a></h3>
+                    <p>{{ faker.realText(300) }}</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-5">
+                    <h3 class="h5"><a href="{{ path('pages.faq.category') }}">{{ faker.sentence(1) }}</a></h3>
+                    <p>{{ faker.realText(300) }}</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-5">
+                    <h3 class="h5"><a href="{{ path('pages.faq.category') }}">{{ faker.sentence(1) }}</a></h3>
+                    <p>{{ faker.realText(300) }}</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-5">
+                    <h3 class="h5"><a href="{{ path('pages.faq.category') }}">{{ faker.sentence(1) }}</a></h3>
+                    <p>{{ faker.realText(300) }}</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-5">
+                    <h3 class="h5"><a href="{{ path('pages.faq.category') }}">{{ faker.sentence(1) }}</a></h3>
+                    <p>{{ faker.realText(300) }}</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-5">
+                    <h3 class="h5"><a href="{{ path('pages.faq.category') }}">{{ faker.sentence(1) }}</a></h3>
+                    <p>{{ faker.realText(300) }}</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-5">
+                    <h3 class="h5"><a href="{{ path('pages.faq.category') }}">{{ faker.sentence(1) }}</a></h3>
+                    <p>{{ faker.realText(300) }}</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-sm-5">
+                    <h3 class="h5"><a href="{{ path('pages.faq.category') }}">{{ faker.sentence(1) }}</a></h3>
+                    <p>{{ faker.realText(300) }}</p>
+                </div>
+            </div>
+        </div>
+    </main>
 {% endblock %}

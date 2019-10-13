@@ -62,9 +62,33 @@ pages.business.index:
   path: /business
   controller: App\Controller\BusinessController::index
 
+pages.business.services:
+  path: /business/services
+  controller: App\Controller\BusinessController::services
+
+pages.business.about:
+  path: /business/about
+  controller: App\Controller\BusinessController::about
+
+pages.business.team:
+  path: /business/team
+  controller: App\Controller\BusinessController::team
+
+pages.business.contact:
+  path: /business/contact
+  controller: App\Controller\BusinessController::contact
+
 pages.faq.index:
   path: /faq
   controller: App\Controller\FaqController::index
+
+pages.faq.article:
+  path: /faq/article
+  controller: App\Controller\FaqController::article
+
+pages.faq.category:
+  path: /faq/category
+  controller: App\Controller\FaqController::category
 
 pages.forum.index:
   path: /forum

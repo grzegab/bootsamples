@@ -25,6 +25,10 @@ class LandingController
      */
     private $twig;
 
+    /**
+     * LandingController constructor.
+     * @param Environment $twig
+     */
     public function __construct(Environment $twig)
     {
         $this->twig = $twig;

@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/business.css') }}" />
+{% endblock %}
+
+{% block body %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Small business</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item {{ active == 'index' ? 'active' : '' }}">
+                        <a href="{{ path('pages.business.index') }}" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item {{ active == 'services' ? 'active' : '' }}">
+                        <a href="{{ path('pages.business.services') }}" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item {{ active == 'about' ? 'active' : '' }}">
+                        <a href="{{ path('pages.business.about') }}" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item {{ active == 'team' ? 'active' : '' }}">
+                        <a href="{{ path('pages.business.team') }}" class="nav-link">Team</a>
+                    </li>
+                    <li class="nav-item {{ active == 'contact' ? 'active' : '' }}">
+                        <a href="{{ path('pages.business.contact') }}" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Change language:</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                        <a href="#" class="dropdown-item">Language</a>
+                        <a href="#" class="dropdown-item">Language</a>
+                        <a href="#" class="dropdown-item">Language</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    {% block content %}{% endblock %}
+    <footer class="small bg-light">
+        <div class="container py-3 py-sm-5">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h6>Quick links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="{{ path('pages.business.index') }}">Home</a></li>
+                        <li><a href="{{ path('pages.business.services') }}">Services</a></li>
+                        <li><a href="{{ path('pages.business.about') }}">About</a></li>
+                        <li><a href="{{ path('pages.business.team') }}">Team</a></li>
+                        <li><a href="{{ path('pages.business.contact') }}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h6>Information</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#0">Legal information</a></li>
+                        <li><a href="#0">Job opportunities</a></li>
+                        <li><a href="#0">Frequently Asked Questions</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h6>Follow us</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#0"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                        <li><a href="#0"><i class="fa fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                        <li><a href="#0"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+                        <li><a href="#0"><i class="fa fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+                        <li><a href="#0"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h6>Our location:</h6>
+                    <address>
+                        <strong>Company Name</strong><br>
+                        Steet Name<br>
+                        ZIP code and city<br>
+                        <i class="fa fa-fw fa-phone" aria-hidden="true"></i> <a href="tel:+1234567890">(123) 456-7890</a><br>
+                        <i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@domain.com">info@domain.com</a>
+                    </address>
+                </div>
+            </div>
+            <ul class="list-inline mt-2 mb-0 text-center">
+                <li class="list-inline-item">&copy; {{ "now"|date('Y') }} Company Name</li>
+                <li class="list-inline-item">All rights reserved.</li>
+            </ul>
+        </div>
+    </footer>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}
