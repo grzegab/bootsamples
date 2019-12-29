@@ -1,13 +1,309 @@
-{% extends 'base.html.twig' %}
+{% extends 'blog/blog.html.twig' %}
 
-{% block stylesheets %}
-    {{ parent() }}
-{% endblock %}
-
-{% block body %}
-    {{ parent() }}
-{% endblock %}
-
-{% block javascripts %}
-    {{ parent() }}
+{% block content %}
+    <div class="container my-3 my-sm-5">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-8">
+                <h2 class="mb-3">Latest posts</h2>
+                <article class="mb-3">
+                    <header class="mb-2">
+                        <a href="#" class="badge badge-primary">Category</a>
+                        <h1><a href="{{ path('pages.blog.post.text') }}">Text blog post title</a></h1>
+                        <div><a href="#0">Author Name</a></div>
+                        <div class="small">Posted on: <time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time></div>
+                        <div class="small"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                        <div class="small">
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longertag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#verylongtag</a>
+                        </div>
+                    </header>
+                    <figure class="figure">
+                        <img src="http://placehold.it/800x600" class="figure-img img-fluid" alt="Figure image">
+                        <figcaption class="figure-caption small">
+                            <p class="mb-0"><i class="fa fa-camera" aria-hidden="true"></i><span class="sr-only">Photo by:</span> Artist Name</p>
+                        </figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor tellus tempor metus posuere dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <a href="{{ path('pages.blog.post.text') }}" class="btn btn-primary">Read more</a>
+                </article>
+                <hr>
+                <article class="mb-3">
+                    <header class="mb-2">
+                        <a href="#" class="badge badge-success">Category</a>
+                        <h1><a href="{{ path('pages.blog.post.video') }}">Video blog post title</a></h1>
+                        <div><a href="#0">Author Name</a></div>
+                        <div class="small">Posted on: <time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time></div>
+                        <div class="small"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                        <div class="small">
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longertag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#verylongtag</a>
+                        </div>
+                    </header>
+                    <div class="figure-img embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" allowfullscreen></iframe>
+                    </div>
+                    <figcaption class="figure-caption small mb-3">
+                        <p class="mb-0"><i class="fa fa-video-camera" aria-hidden="true"></i><span class="sr-only">Video by:</span> Artist Name</p>
+                    </figcaption>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor tellus tempor metus posuere dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <a href="{{ path('pages.blog.post.video') }}" class="btn btn-primary">Read more</a>
+                </article>
+                <hr>
+                <article class="mb-3">
+                    <header class="mb-2">
+                        <a href="#" class="badge badge-danger">Category</a>
+                        <h1><a href="{{ path('pages.blog.post.audio') }}">Audio blog post title</a></h1>
+                        <div><a href="#0">Author Name</a></div>
+                        <div class="small">Posted on: <time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time></div>
+                        <div class="small"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                        <div class="small">
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longertag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#verylongtag</a>
+                        </div>
+                    </header>
+                    <div class="figure-img embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/339767079&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+                    </div>
+                    <figcaption class="figure-caption small mb-3">
+                        <p class="mb-0"><i class="fa fa-microphone" aria-hidden="true"></i><span class="sr-only">Audio by:</span> Artist Name</p>
+                    </figcaption>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor tellus tempor metus posuere dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <a href="{{ path('pages.blog.post.audio') }}" class="btn btn-primary">Read more</a>
+                </article>
+                <hr>
+                <article class="mb-3">
+                    <header class="mb-2">
+                        <a href="#" class="badge badge-warning">Category</a>
+                        <h1><a href="{{ path('pages.blog.post.gallery') }}">Photo gallery blog post title</a></h1>
+                        <div><a href="#0">Author Name</a></div>
+                        <div class="small">Posted on: <time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time></div>
+                        <div class="small"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                        <div class="small">
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longertag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#verylongtag</a>
+                        </div>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor tellus tempor metus posuere dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <figure class="figure">
+                                <img src="http://placehold.it/600x450" class="img-fluid img-thumbnail" alt="Figure image">
+                            </figure>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <figure class="figure">
+                                <img src="http://placehold.it/600x450" class="img-fluid img-thumbnail" alt="Figure image">
+                            </figure>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <figure class="figure">
+                                <img src="http://placehold.it/600x450" class="img-fluid img-thumbnail" alt="Figure image">
+                            </figure>
+                        </div>
+                    </div>
+                    <a href="{{ path('pages.blog.post.gallery') }}" class="btn btn-primary">Read more</a>
+                </article>
+                <hr>
+                <article class="mb-3">
+                    <header class="mb-2">
+                        <a href="#" class="badge badge-info">Category</a>
+                        <h1><a href="{{ path('pages.blog.post.text') }}">Text blog post title</a></h1>
+                        <div><a href="#0">Author Name</a></div>
+                        <div class="small">Posted on: <time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time></div>
+                        <div class="small"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                        <div class="small">
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longertag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#verylongtag</a>
+                        </div>
+                    </header>
+                    <figure class="figure">
+                        <img src="http://placehold.it/800x600" class="figure-img img-fluid" alt="Figure image">
+                        <figcaption class="figure-caption small">
+                            <p class="mb-0"><i class="fa fa-camera" aria-hidden="true"></i><span class="sr-only">Photo by:</span> Artist Name</p>
+                        </figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor tellus tempor metus posuere dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <a href="{{ path('pages.blog.post.text') }}" class="btn btn-primary">Read more</a>
+                </article>
+                <hr>
+                <nav aria-label="Blog pages">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                <span class="page-link" aria-label="Previous">
+                  <span aria-hidden="true">«</span>
+                  <span class="sr-only">Previous</span>
+                </span>
+                        </li>
+                        <li class="page-item active">
+                            <a href="#0" class="page-link">
+                                1 <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a href="#0" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#0" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#0" class="page-link">4</a></li>
+                        <li class="page-item"><a href="#0" class="page-link">5</a></li>
+                        <li class="page-item">
+                            <a href="#0" class="page-link" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <aside>
+                    <h2 class="mb-3">Popular posts</h2>
+                    <div class="list-group mb-3">
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                    </div>
+                    <h2 class="mb-3">Recent posts</h2>
+                    <div class="list-group mb-3">
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                    </div>
+                    <h2 class="mb-3">Categories</h2>
+                    <div class="list-group mb-3">
+                        <a href="#" class="list-group-item list-group-item-action bg-primary text-white">Category</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-success text-white">Category</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-danger text-white">Category</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-warning text-white">Category</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-info text-white">Category</a>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Tag cloud</h5>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longertag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#verylongtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longertag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#verylongtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longertag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#verylongtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">About the blog</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor tellus tempor metus posuere dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. <a href="#0">Read more...</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h5 class="card-title">Signup for our newsletter</h5>
+                            <form>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="addon-left">@</span>
+                                    </div>
+                                    <input type="email" class="form-control" name="email" placeholder="Enter your email" aria-describedby="addon-left" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Signup</button>
+                            </form>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
 {% endblock %}

@@ -1,7 +1,9 @@
+# Home
 list:
   path: /
   controller: App\Controller\ListController::index
 
+# Templates
 templates.photo.gallery:
   path: /templates/photo-galery
   controller: App\Controller\TemplatesController::photoGallery
@@ -54,10 +56,32 @@ templates.create.account:
   path: /templates/create-account
   controller: App\Controller\TemplatesController::createAccount
 
+# Page Blog
 pages.blog.index:
   path: /blog
   controller: App\Controller\BlogController::index
 
+pages.blog.post.grid:
+  path: /blog/post/grid
+  controller: App\Controller\BlogController::postGrid
+
+pages.blog.post.audio:
+  path: /blog/post/audio
+  controller: App\Controller\BlogController::postAudio
+
+pages.blog.post.gallery:
+  path: /blog/post/gallery
+  controller: App\Controller\BlogController::postGallery
+
+pages.blog.post.text:
+  path: /blog/post/text
+  controller: App\Controller\BlogController::postText
+
+pages.blog.post.video:
+  path: /blog/post/video
+  controller: App\Controller\BlogController::postVideo
+
+# Page Business
 pages.business.index:
   path: /business
   controller: App\Controller\BusinessController::index
@@ -78,6 +102,7 @@ pages.business.contact:
   path: /business/contact
   controller: App\Controller\BusinessController::contact
 
+# Faq page
 pages.faq.index:
   path: /faq
   controller: App\Controller\FaqController::index
@@ -90,22 +115,43 @@ pages.faq.category:
   path: /faq/category
   controller: App\Controller\FaqController::category
 
+# Forum page
 pages.forum.index:
   path: /forum
   controller: App\Controller\ForumController::index
 
+pages.forum.topic.new:
+  path: /forum/topic/new
+  controller: App\Controller\ForumController::newTopic
+
+pages.forum.overview.category:
+  path: /forum/category/overview
+  controller: App\Controller\ForumController::categoryOverview
+
+pages.forum.topic.overview:
+  path: /forum/topic/overview
+  controller: App\Controller\ForumController::topicOverview
+
+pages.forum.topic.post:
+  path: /forum/topic/post
+  controller: App\Controller\ForumController::Post
+
+# Landing page
 pages.landing.index:
   path: /landing
   controller: App\Controller\LandingController::index
 
+# Resume page
 pages.resume.index:
   path: /resume
   controller: App\Controller\ResumeController::index
 
+# Survey page
 pages.survey.index:
   path: /survey
   controller: App\Controller\SurveyController::index
 
+# Admin panel page
 pages.admin.index:
   path: /admin
   controller: App\Controller\LandingController::index

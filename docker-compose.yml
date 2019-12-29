@@ -9,6 +9,8 @@ networks:
 services:
   web:
     image: nginx:latest
+    env_file:
+      - .env.local
     container_name: bootsapmles_web
     labels:
       - "${DOCKER_HOST_FRONTEND}"
@@ -25,6 +27,8 @@ services:
   php:
     build:
       context: docker/php
+    env_file:
+      - .env.local
     container_name: bootsamples_php
     volumes:
       - .:/var/www/html:cached
@@ -32,6 +36,3 @@ services:
       - 9001
     ports:
       - "9000:9000"
-    environment:
-      - PHP_XDEBUG_ENABLED=${PHP_XDEBUG_ENABLED}
-      - APP_ENV=${APP_ENV}
