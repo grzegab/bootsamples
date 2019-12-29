@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body_options %}class="bg-light py-3 py-lg-5"{% endblock %}
+
+{% block body %}
+
+    {% block content %}{% endblock %}
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript">
+        $(function () {
+            $('#goto-step-2').on('click', function (e) {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 300, function() {
+                    $('#step-2-tab').tab('show');
+                });
+            })
+            $('#goto-step-3').on('click', function (e) {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 1000, function() {
+                    $('#step-3-tab').tab('show');
+                });
+            })
+        });
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+{% endblock %}

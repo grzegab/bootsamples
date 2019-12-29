@@ -1,0 +1,209 @@
+{% extends 'blog/blog.html.twig' %}
+
+{% block content %}
+    <div class="container my-3 my-sm-5">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <article class="mb-3">
+                    <header class="mb-2">
+                        <a href="#" class="badge badge-success">Category</a>
+                        <h1>Video blog post title</h1>
+                        <div><a href="#0">Author Name</a></div>
+                        <div class="small">Posted on: <time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time></div>
+                        <div class="small"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                        <div class="small">
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longertag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#verylongtag</a>
+                        </div>
+                    </header>
+                    <section id="main" class="mb-3">
+                        <div class="figure-img embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" allowfullscreen></iframe>
+                        </div>
+                        <figcaption class="figure-caption small mb-3">
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet pellentesque lorem sed elementum.</p>
+                            <p class="mb-0"><i class="fa fa-video-camera" aria-hidden="true"></i><span class="sr-only">Video by:</span> Artist Name</p>
+                        </figcaption>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor tellus tempor metus posuere dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    </section>
+                    <section id="comments" class="small">
+                        <button class="btn btn-lg btn-primary mb-3"><i class="fa fa-thumbs-up" aria-hidden="true"></i> <span class="sr-only">Like</span></button>
+                        <h2>Comments</h2>
+                        <div class="media">
+                            <img src="https://placehold.it/64x64" alt="Media object image" class="mr-3">
+                            <div class="media-body">
+                                <p><a href="mailto:example@domain.com">Author Name</a> (Posted on: <time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor tellus tempor metus posuere dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media">
+                            <img src="https://placehold.it/64x64" alt="Media object image" class="mr-3">
+                            <div class="media-body">
+                                <p><a href="mailto:example@domain.com">Author Name</a> (Posted on: <time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor tellus tempor metus posuere dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media">
+                            <img src="https://placehold.it/64x64" alt="Media object image" class="mr-3">
+                            <div class="media-body">
+                                <p><a href="mailto:example@domain.com">Author Name</a> (Posted on: <time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor tellus tempor metus posuere dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                                <div class="media">
+                                    <img src="https://placehold.it/64x64" alt="Media object image" class="mr-3">
+                                    <div class="media-body">
+                                        <p><a href="mailto:example@domain.com">Author Name</a> (Posted on: <time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor tellus tempor metus posuere dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <img src="https://placehold.it/64x64" alt="Media object image" class="mr-3">
+                                    <div class="media-body">
+                                        <p><a href="mailto:example@domain.com">Author Name</a> (Posted on: <time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor tellus tempor metus posuere dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="name">Name:</label>
+                                        <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" placeholder="example@email.com" id="email" name="email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Your comment:</label>
+                                <textarea class="form-control" id="comment" name="comment" rows="5" placeholder="Write your comment here. Maximum 500 characters." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="reset" class="btn btn-danger">Reset</button>
+                        </form>
+                    </section>
+                </article>
+            </div>
+            <div class="col-12 col-lg-4">
+                <aside>
+                    <h2 class="mb-3">About the author</h2>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img src="http://placehold.it/200x200" class="img-fluid rounded-circle" alt="Figure image">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item small"><a href="#0">Twitter</a></li>
+                                    <li class="list-inline-item small"><a href="#0">LinkedIn</a></li>
+                                </ul>
+                            </div>
+                            <h5><a href="#0">Author Name</a></h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor tellus tempor metus posuere dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        </div>
+                    </div>
+                    <h2 class="mb-3">Related posts</h2>
+                    <div class="list-group mb-3">
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                        <a href="#0" class="list-group-item list-group-item-action">
+                            <div class="badge badge-primary float-right">Category</div>
+                            <h5>Blog post title</h5>
+                            <p class="small mb-2">Author Name (<time datetime="2017-03-12T10:24">March 12, 2017 at 10:24 AM</time>)</p>
+                            <div class="small mb-2"><span class="badge badge-primary"><i class="fa fa-thumbs-up" aria-hidden="true"></i> 13 <span class="sr-only">likes</span></span> <span class="badge badge-primary"><i class="fa fa-comments" aria-hidden="true"></i> 3 <span class="sr-only">comments</span></span></div>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </a>
+                    </div>
+                    <h2 class="mb-3">Categories</h2>
+                    <div class="list-group mb-3">
+                        <a href="#" class="list-group-item list-group-item-action bg-primary text-white">Category</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-success text-white">Category</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-danger text-white">Category</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-warning text-white">Category</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-info text-white">Category</a>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Tag cloud</h5>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longertag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#verylongtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longertag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#verylongtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#longertag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                            <a href="#0" class="badge badge-secondary">#verylongtag</a>
+                            <a href="#0" class="badge badge-secondary">#tag</a>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">About the blog</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor tellus tempor metus posuere dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. <a href="#0">Read more...</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h5 class="card-title">Signup for our newsletter</h5>
+                            <form>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="addon-left">@</span>
+                                    </div>
+                                    <input type="email" class="form-control" name="email" placeholder="Enter your email" aria-describedby="addon-left" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Signup</button>
+                            </form>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+{% endblock %}

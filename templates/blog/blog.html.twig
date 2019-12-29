@@ -1,0 +1,125 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a href="{{ path('pages.blog.index') }}" class="navbar-brand">Blog title</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="{{ path('pages.blog.index') }}" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-sm active">
+                        <a href="#0" class="nav-link dropdown-toggle" id="blogDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog<span class="sr-only">(current)</span></a>
+                        <div class="dropdown-menu" aria-labelledby="blogDropdown">
+                            <a href="{{ path('pages.blog.index') }}" class="dropdown-item active">List</a>
+                            <a href="{{ path('pages.blog.post.grid') }}" class="dropdown-item">Grid</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown dropdown-sm">
+                        <a href="#0" class="nav-link dropdown-toggle" id="archiveDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Archive</a>
+                        <div class="dropdown-menu" aria-labelledby="archiveDropdown">
+                            <h6 class="dropdown-header">2017</h6>
+                            <a href="#0" class="dropdown-item">December</a>
+                            <a href="#0" class="dropdown-item">November</a>
+                            <a href="#0" class="dropdown-item">October</a>
+                            <a href="#0" class="dropdown-item">September</a>
+                            <a href="#0" class="dropdown-item">August</a>
+                            <a href="#0" class="dropdown-item">July</a>
+                            <a href="#0" class="dropdown-item">June</a>
+                            <a href="#0" class="dropdown-item">May</a>
+                            <a href="#0" class="dropdown-item">April</a>
+                            <a href="#0" class="dropdown-item">March</a>
+                            <a href="#0" class="dropdown-item">February</a>
+                            <a href="#0" class="dropdown-item">January</a>
+                            <div class="dropdown-divider"></div>
+                            <h6 class="dropdown-header">2016</h6>
+                            <a href="#0" class="dropdown-item">December</a>
+                            <a href="#0" class="dropdown-item">November</a>
+                            <a href="#0" class="dropdown-item">October</a>
+                            <a href="#0" class="dropdown-item">September</a>
+                            <a href="#0" class="dropdown-item">August</a>
+                            <a href="#0" class="dropdown-item">July</a>
+                            <a href="#0" class="dropdown-item">June</a>
+                            <a href="#0" class="dropdown-item">May</a>
+                            <a href="#0" class="dropdown-item">April</a>
+                            <a href="#0" class="dropdown-item">March</a>
+                            <a href="#0" class="dropdown-item">February</a>
+                            <a href="#0" class="dropdown-item">January</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#0" class="nav-link">About</a>
+                    </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input type="text" name="search" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+                    <button type="submit" class="btn btn-primary my-2 my-sm-0"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    {% block content %}{% endblock %}
+    <footer class="small bg-light">
+        <div class="container py-3 py-sm-5">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h6>Quick links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#0">Home</a></li>
+                        <li><a href="#0">Archive</a></li>
+                        <li><a href="#0">Categories</a></li>
+                        <li><a href="#0">Tag cloud</a></li>
+                        <li><a href="#0">Search</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h6>Information</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#0">About us</a></li>
+                        <li><a href="#0">Authors</a></li>
+                        <li><a href="#0">Newsletter</a></li>
+                        <li><a href="#0">Advertising</a></li>
+                        <li><a href="#0">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h6>Follow us</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#0">Facebook</a></li>
+                        <li><a href="#0">Instagram</a></li>
+                        <li><a href="#0">Twitter</a></li>
+                        <li><a href="#0">YouTube</a></li>
+                        <li><a href="#0">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h6>Contact us</h6>
+                    <address>
+                        <strong>Blog Name</strong><br>
+                        Street name<br>
+                        ZIP code and city<br>
+                        <abbr title="Telephone">T:</abbr> <a href="tel:+1234567890">(123) 456-7890</a><br>
+                        <abbr title="Mail">M:</abbr> <a href="mailto:info@domain.com">info@domain.com</a>
+                    </address>
+                </div>
+            </div>
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">&copy; 2017 Blog Name</li>
+                <li class="list-inline-item">All rights reserved.</li>
+                <li class="list-inline-item"><a href="#0">Terms of use and privacy policy</a>.</li>
+            </ul>
+        </div>
+    </footer>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}
